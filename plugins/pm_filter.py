@@ -1810,14 +1810,14 @@ async def pm_spoll_choker(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("𝗜 𝗰𝗼𝘂𝗹𝗱𝗻'𝘁 𝗳𝗶𝗻𝗱 𝗮𝗻𝘆 𝗺𝗼𝘃𝗶𝗲 𝗶𝗻 𝘁𝗵𝗮𝘁 𝗻𝗮𝗺𝗲 𝗽𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗕𝗨𝗧𝗧𝗢𝗡𝗦 \n 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝗶𝘀 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗶𝗻 𝗼𝘁𝘁 \n 𝗜𝗳 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗷𝗼𝗶𝗻 𝘁𝗵𝗶𝘀 𝗴𝗿𝗼𝘂𝗽 𝘀𝗲𝗻𝗱 𝗺𝗼𝘃𝗶𝗲 𝗻𝗮𝗺𝗲 𝘁𝗵𝗲𝗿𝗲\n 𝗮𝗱𝗺𝗶𝗻 𝘄𝗶𝗹𝗹 𝗮𝗱𝗱 𝗶𝘁 𝗮𝗻𝗱 𝗶𝗻𝗳𝗼𝗿𝗺 𝘆𝗼𝘂 \n\n 𝗹𝗶𝗻𝗸 https://t.me/+w0U0kQJBYb0yMjk1")
         await asyncio.sleep(8)
         await k.delete()
         return
     PM_SPELL_CHECK[msg.id] = movielist
     btn = [[InlineKeyboardButton(text=movie.strip(), callback_data=f"pmspolling#{user}#{k}")] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'pmspolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
+    await msg.reply("𝗜 𝗰𝗼𝘂𝗹𝗱𝗻'𝘁 𝗳𝗶𝗻𝗱 𝗮𝗻𝘆 𝗺𝗼𝘃𝗶𝗲 𝗶𝗻 𝘁𝗵𝗮𝘁 𝗻𝗮𝗺𝗲 𝗽𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗕𝗨𝗧𝗧𝗢𝗡𝗦 \n 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝗶𝘀 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗶𝗻 𝗼𝘁𝘁 \n 𝗜𝗳 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗷𝗼𝗶𝗻 𝘁𝗵𝗶𝘀 𝗴𝗿𝗼𝘂𝗽 𝘀𝗲𝗻𝗱 𝗺𝗼𝘃𝗶𝗲 𝗻𝗮𝗺𝗲 𝘁𝗵𝗲𝗿𝗲\n 𝗮𝗱𝗺𝗶𝗻 𝘄𝗶𝗹𝗹 𝗮𝗱𝗱 𝗶𝘁 𝗮𝗻𝗱 𝗶𝗻𝗳𝗼𝗿𝗺 𝘆𝗼𝘂 \n\n 𝗹𝗶𝗻𝗸 https://t.me/+w0U0kQJBYb0yMjk1", reply_markup=InlineKeyboardMarkup(btn), reply_to_message_id=msg.id)
 
 
 async def advantage_spell_chok(msg):
@@ -1858,7 +1858,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("𝗜 𝗰𝗼𝘂𝗹𝗱𝗻'𝘁 𝗳𝗶𝗻𝗱 𝗮𝗻𝘆 𝗺𝗼𝘃𝗶𝗲 𝗶𝗻 𝘁𝗵𝗮𝘁 𝗻𝗮𝗺𝗲 𝗽𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗕𝗨𝗧𝗧𝗢𝗡𝗦 \n 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝗶𝘀 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗶𝗻 𝗼𝘁𝘁 \n 𝗜𝗳 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗷𝗼𝗶𝗻 𝘁𝗵𝗶𝘀 𝗴𝗿𝗼𝘂𝗽 𝘀𝗲𝗻𝗱 𝗺𝗼𝘃𝗶𝗲 𝗻𝗮𝗺𝗲 𝘁𝗵𝗲𝗿𝗲\n 𝗮𝗱𝗺𝗶𝗻 𝘄𝗶𝗹𝗹 𝗮𝗱𝗱 𝗶𝘁 𝗮𝗻𝗱 𝗶𝗻𝗳𝗼𝗿𝗺 𝘆𝗼𝘂 \n\n 𝗹𝗶𝗻𝗸 https://t.me/+w0U0kQJBYb0yMjk1")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1870,7 +1870,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
+    await msg.reply("𝗜 𝗰𝗼𝘂𝗹𝗱𝗻'𝘁 𝗳𝗶𝗻𝗱 𝗮𝗻𝘆 𝗺𝗼𝘃𝗶𝗲 𝗶𝗻 𝘁𝗵𝗮𝘁 𝗻𝗮𝗺𝗲 𝗽𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗕𝗨𝗧𝗧𝗢𝗡𝗦 \n 𝗣𝗹𝗲𝗮𝘀𝗲 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝗶𝘀 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗶𝗻 𝗼𝘁𝘁 \n 𝗜𝗳 𝗿𝗲𝗹𝗲𝗮𝘀𝗲𝗱 𝗷𝗼𝗶𝗻 𝘁𝗵𝗶𝘀 𝗴𝗿𝗼𝘂𝗽 𝘀𝗲𝗻𝗱 𝗺𝗼𝘃𝗶𝗲 𝗻𝗮𝗺𝗲 𝘁𝗵𝗲𝗿𝗲\n 𝗮𝗱𝗺𝗶𝗻 𝘄𝗶𝗹𝗹 𝗮𝗱𝗱 𝗶𝘁 𝗮𝗻𝗱 𝗶𝗻𝗳𝗼𝗿𝗺 𝘆𝗼𝘂 \n\n 𝗹𝗶𝗻𝗸 https://t.me/+w0U0kQJBYb0yMjk1",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
