@@ -38,26 +38,26 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention, message.from_user.username, temp.U_NAME))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
 
         ],  [
-             InlineKeyboardButton('DISCLAIMER', callback_data='disclaimer')
+             InlineKeyboardButton('☛𝗗𝗜𝗦𝗖𝗟𝗔𝗜𝗠𝗘𝗥☚', callback_data='disclaimer')
         ],  [
 
-            InlineKeyboardButton('⚡ GROUP ⚡', url='https://t.me/+cHFG071nmPsyYzBh'),
+            InlineKeyboardButton('➫ᧁׁꭈׁׅᨵׁׅυׁׅ℘', url='https://t.me/+cHFG071nmPsyYzBh'),
 
-            InlineKeyboardButton('🤖 CHANNEL 🤖', url='https://t.me/+cDIjx6c8NcdlNmM5')
+            InlineKeyboardButton('➫ᝯׁhׁׅ֮ɑׁׅ֮ꪀׁׅꪀׁׅꫀׁׅܻᥣׁׅ֪', url='https://t.me/+cDIjx6c8NcdlNmM5')
 
         ], [
 
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('♝🄷🄴🄻🄿♝', callback_data='help2'),
 
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♝🄰🄱🄾🅄🅃♝', callback_data='about')
 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_sticker("CAACAgUAAxkBAAEeHPNkCJ3ApreNqBwEbmqzlbKK4MlwLwACmgADyJRkFCxl4eFc7yVqLgQ")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEMHtxmRXHrgJOmGgg3W_RBiawbtXfc1wACYwMAAji9SVR8duQ5OF3RMDUE")
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_photo(
@@ -97,26 +97,26 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝗔𝗗𝗗 𝗠𝗘 𝗧𝗢 𝗬𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
 
         ],  [
-             InlineKeyboardButton('DISCLAIMER', callback_data='disclaimer')
+             InlineKeyboardButton('☛𝗗𝗜𝗦𝗖𝗟𝗔𝗜𝗠𝗘𝗥☚', callback_data='disclaimer')
         ],  [
 
-            InlineKeyboardButton('⚡ GROUP ⚡', url='https://t.me/+cHFG071nmPsyYzBh'),
+            InlineKeyboardButton('➫ᧁׁꭈׁׅᨵׁׅυׁׅ℘', url='https://t.me/+cHFG071nmPsyYzBh'),
 
-            InlineKeyboardButton('🤖 CHANNEL 🤖', url='https://t.me/+cDIjx6c8NcdlNmM5')
+            InlineKeyboardButton('➫ᝯׁhׁׅ֮ɑׁׅ֮ꪀׁׅꪀׁׅꫀׁׅܻᥣׁׅ֪', url='https://t.me/+cDIjx6c8NcdlNmM5')
 
         ], [
 
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('♝🄷🄴🄻🄿♝', callback_data='help2'),
 
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♝🄰🄱🄾🅄🅃♝', callback_data='about')
 
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action(enums.ChatAction.TYPING)
-        m=await message.reply_sticker("CAACAgUAAxkBAAEeHPNkCJ3ApreNqBwEbmqzlbKK4MlwLwACmgADyJRkFCxl4eFc7yVqLgQ")
+        m=await message.reply_sticker("CAACAgUAAxkBAAEMHtxmRXHrgJOmGgg3W_RBiawbtXfc1wACYwMAAji9SVR8duQ5OF3RMDUE")
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_photo(
